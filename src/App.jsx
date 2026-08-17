@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
   const loadHistory = async () => {
-    const res = await fetch(`http://localhost:5000/history/${sessionId}`);
+    const res = await fetch(`https://chatbot-backend-teta.onrender.com/history/${sessionId}`);
     const data = await res.json();
     setMessages(data.messages);
   };
