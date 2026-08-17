@@ -38,7 +38,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await fetch('https://chatbot-backend-teta.onrender.com', {
+      const res = await fetch('https://chatbot-backend-teta.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input, sessionId })
@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="chat-container">
       <div className="chat-header">
-  <span>AI Chatbot</span>
+  <span>Rosy</span>
   <button className="new-chat-btn" onClick={startNewChat}>+ New Chat</button>
 </div>
       <div className="messages">
